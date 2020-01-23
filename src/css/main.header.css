@@ -1,0 +1,79 @@
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  height: 80rem !important;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  padding: 16rem 24rem;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.panelSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panelSection button {
+  display: inline-flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(12, 12, 12);
+  transition: opacity 250ms;
+}
+
+
+.historyIcon {
+  width: 34rem;
+  height: 34rem;
+  border: 0;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.historyIcon:first-child {
+  margin-right: 16rem;
+}
+
+.historyIconDisabled {
+  composes: historyIcon;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.historyIcon svg {
+  width: 22rem;
+  height: 22rem;
+}
+
+.upgradeBtn {
+  color: #fff;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 18rem;
+  padding: 8rem 34rem;
+  border: solid 1rem #fff;
+  background: transparent;
+  border-radius: 500rem;
+  letter-spacing: 1.76rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+

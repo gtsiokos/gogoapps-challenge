@@ -1,0 +1,46 @@
+
+.panel {
+  display: flex;
+  width: 230rem;
+  flex-direction: column;
+  padding-top: 24rem;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.iconLink {
+  color: #fff;
+  padding: 0 0 18rem 24rem;
+}
+
+.icon {
+  width: 131rem;
+  height: 40rem;
+}
+
+.nav {
+  padding: 8rem;
+  justify-content: center;
+}
+
+.navLink {
+  display: flex;
+  font-size: 14rem;
+  font-weight: bold;
+  line-height: 20rem;
+  height: 40rem;
+  padding: 0 16rem;
+  border-radius: 4rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navLink [class^='fa'] {
+  font-size: 20rem;
+  margin-right: 16rem;
+}
+
+.navLinkActive {
+  color: #fff;
+  background-color: #282828;
+}
+

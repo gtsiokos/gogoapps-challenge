@@ -1,0 +1,114 @@
+
+.panel {
+  display: flex;
+  width: 100%;
+  height: 90rem;
+  padding: 0 16rem;
+  background: #282828;
+  border-top: solid 1rem #000;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.panelLeft {
+  display: flex;
+  width: 30%;
+  min-width: 180px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.panelCenter {
+  display: flex;
+  width: 40%;
+  max-width: 722px;
+  justify-content: center;
+}
+
+.panelRight {
+  display: flex;
+  width: 30%;
+  min-width: 180px;
+  justify-content: flex-end;
+}
+
+.trackCover {
+  width: 56rem;
+  height: 56rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 14rem;
+}
+
+.trackInfoBase {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trackInfoName {
+  composes: trackInfoBase;
+  font-size: 14rem;
+  line-height: 20rem;
+  color: #fff;
+}
+
+.trackInfoArtists {
+  composes: trackInfoBase;
+  font-size: 12rem;
+  line-height: 16rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.controlButtons {
+  display: flex;
+  width: 224rem;
+  //margin-bottom: 12rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controlButton {
+  position: relative;
+}
+
+.controlButton button {
+  background: transparent;
+  color: #b3b3b3;
+  border: 0;
+}
+
+.controlButtonActive button {
+  background: transparent;
+  color: #1db954;
+  border: 0;
+}
+
+.controlButtonDisabled button {
+  pointer-events: none;
+  background: transparent;
+  color: #404040;
+  border: 0;
+}
+
+.controlButtonPlayback {
+  composes: controlButton;
+}
+
+.controlButtonPlayback button {
+  font-size: 40rem;
+}

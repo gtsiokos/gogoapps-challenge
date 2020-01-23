@@ -1,0 +1,69 @@
+:global(*) {
+  box-sizing: border-box;
+}
+
+:global(*.no-select) {
+  user-select: none;
+}
+
+:global(html) {
+  font-size: 1px;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+:global(body) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-size: 16rem;
+  color: #b3b3b3;
+  background: #121212;
+  cursor: default;
+}
+
+:global(::-webkit-scrollbar) {
+  width: 16rem;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+  background-color: hsla(0,0%,100%, 0.3);
+}
+
+:global(a) {
+  color: #b3b3b3;
+  text-decoration: none !important;
+  transition: all 200ms;
+}
+
+:global(a:active) {
+  color: #fff;
+}
+
+:global(a:hover) {
+  color: #fff;
+}
+
+:global(.viewport) {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:global(.container){
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
